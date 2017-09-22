@@ -1,0 +1,523 @@
+creature_tundra
+
+[OBJECT:CREATURE]
+
+direwolf
+hornbull
+mammoth
+moose
+
+[CREATURE:DIREWOLF]
+========= Naming ========================================================================
+	[NAME:direwolf:direwolves:direwolf]
+	[PREFSTRING:aggression]
+========= Representation ================================================================
+	[CREATURE_TILE:'C'][COLOR:5:0:1]
+========= Pet information ===============================================================
+	[PET_EXOTIC]
+	[PETVALUE:100]
+========= Biomes and population information =============================================
+	[ALL_ACTIVE]
+
+	[BIOME:TUNDRA]
+	[BIOME:FOREST_TAIGA]
+	
+	[POPULATION_NUMBER:10:40]
+	[CLUSTER_NUMBER:1:5]
+	
+	[LARGE_ROAMING][FREQUENCY:15]
+	[LARGE_PREDATOR]
+========= Castes ========================================================================
+	[CASTE:FEMALE]
+		[FEMALE]
+		[CASTE_NAME:direwolf:direwolves:direwolf]
+		[DESCRIPTION:(Size 250) A big fierce canine found in cold regions. Much larger than a wolf, they are great predators and terrifying beasts.]
+	[CASTE:MALE]
+		[MALE]
+		[CASTE_NAME:direwolf:direwolves:direwolf]
+		[DESCRIPTION:(Size 250) A big fierce canine found in cold regions. Much larger than a wolf, they are great predators and terrifying beasts.]
+========= Body ==========================================================================
+	[SELECT_CASTE:ALL]
+		[BODY:QUADRUPED:QUADRUPED_JOINTS:TAIL:2EYES:2EARS:NOSE:2LUNGS:HEART:GUTS:ORGANS:THROAT:NECK:SPINE:BRAIN:SKULL:4TOES_FQ_REG:4TOES_RQ_REG:MOUTH:TONGUE:GENERIC_TEETH_WITH_LARGE_EYE_TEETH:RIBCAGE]
+		[BODYGLOSS:PAW]
+		[HOMEOTHERM:10070]
+========= Body materials ================================================================
+	[SELECT_CASTE:ALL]
+		[BODY_DETAIL_PLAN:STRONG_MATERIALS]
+		[BODY_DETAIL_PLAN:STRONG_TISSUES]
+		[BODY_DETAIL_PLAN:VERTEBRATE_TISSUE_LAYERS:SKIN:FAT:MUSCLE:BONE:CARTILAGE]
+		[BODY_DETAIL_PLAN:BODY_HAIR_TISSUE_LAYERS:HAIR]
+		[BODY_DETAIL_PLAN:STANDARD_HEAD_POSITIONS]
+		[BODY_DETAIL_PLAN:HUMANOID_RIBCAGE_POSITIONS]
+		
+		[USE_MATERIAL_TEMPLATE:NAIL:NAIL_TEMPLATE]
+		[USE_MATERIAL_TEMPLATE:SINEW:SINEW_TEMPLATE]
+		[USE_MATERIAL_TEMPLATE:BLOOD:BLOOD_TEMPLATE]
+		[USE_MATERIAL_TEMPLATE:PUS:PUS_TEMPLATE]
+		
+		[USE_TISSUE_TEMPLATE:NAIL:NAIL_TEMPLATE]
+		
+		[TISSUE_LAYER:BY_CATEGORY:TOE:NAIL:FRONT]
+		
+		[TENDONS:LOCAL_CREATURE_MAT:SINEW:200]
+		[LIGAMENTS:LOCAL_CREATURE_MAT:SINEW:200]
+		[BLOOD:LOCAL_CREATURE_MAT:BLOOD:LIQUID]
+		[PUS:LOCAL_CREATURE_MAT:PUS:LIQUID]
+		
+		[SELECT_TISSUE_LAYER:HEART:BY_CATEGORY:HEART]
+		 [PLUS_TISSUE_LAYER:SKIN:BY_CATEGORY:THROAT]
+			[TL_MAJOR_ARTERIES]
+			
+		[SELECT_TISSUE:HAIR]
+			[INSULATION:200]
+
+		[HAS_NERVES]
+========= Syndromes and curses relation =================================================
+	[SELECT_CASTE:ALL]
+		[CREATURE_CLASS:GENERAL_POISON]
+		[CREATURE_CLASS:ANIMAL]
+		[GETS_WOUND_INFECTIONS]
+		[GETS_INFECTIONS_FROM_ROT]
+========= Abilities and disabilities ====================================================
+	[SELECT_CASTE:ALL]
+		[NATURAL]
+		[TRAINABLE]
+		
+		[MEANDERER]
+		
+		[BONECARN]
+
+		[SOUND:ALERT:20:2500:VOCALIZATION:snarl:snarls:a snarl]
+		[SOUND:PEACEFUL_INTERMITTENT:85:15000:VOCALIZATION:howl:howls:a terrifying howl]
+========= Attributes and skills =========================================================
+	[SELECT_CASTE:ALL]
+		[SWIMS_INNATE][SWIM_SPEED:2500]	
+========= Growth and procreation ========================================================
+	[SELECT_CASTE:ALL]
+		[MAXAGE:10:20]
+		[CHILD:1]
+			[GENERAL_CHILD_NAME:direwolf pup:direwolf pups]
+		[BODY_SIZE:0:0:250000]
+========= Attacks =======================================================================
+	[SELECT_CASTE:ALL]
+		[ATTACK:BITE:CHILD_BODYPART_GROUP:BY_CATEGORY:MOUTH:BY_CATEGORY:TOOTH]
+			[ATTACK_SKILL:BITE]
+			[ATTACK_VERB:bite:bites]
+			[ATTACK_CONTACT_PERC:100]
+			[ATTACK_PENETRATION_PERC:100]
+			[ATTACK_FLAG_EDGE]
+			[ATTACK_PRIORITY:MAIN]
+			[ATTACK_FLAG_CANLATCH]
+		[ATTACK:SCRATCH:CHILD_TISSUE_LAYER_GROUP:BY_TYPE:STANCE:BY_CATEGORY:ALL:NAIL]
+			[ATTACK_SKILL:GRASP_STRIKE]
+			[ATTACK_VERB:scratch:scratches]
+			[ATTACK_CONTACT_PERC:100]
+			[ATTACK_PENETRATION_PERC:100]
+			[ATTACK_FLAG_EDGE]
+			[ATTACK_PRIORITY:SECOND]
+========= Body appearance modifiers =====================================================
+	[SELECT_CASTE:ALL]
+		[BODY_APPEARANCE_MODIFIER:LENGTH:90:95:98:100:102:105:110]
+		[BODY_APPEARANCE_MODIFIER:HEIGHT:90:95:98:100:102:105:110]
+		[BODY_APPEARANCE_MODIFIER:BROADNESS:90:95:98:100:102:105:110]
+========= Personality ===================================================================
+========= Appearance ====================================================================
+	[SELECT_CASTE:ALL]
+		[SET_TL_GROUP:BY_CATEGORY:ALL:HAIR]
+			[TL_COLOR_MODIFIER:BLACK:1]
+				[TLCM_NOUN:hide:SINGULAR]
+		[SET_TL_GROUP:BY_CATEGORY:ALL:SKIN]
+			[TL_COLOR_MODIFIER:BROWN:1:BURNT_UMBER:1:CINNAMON:1:COPPER:1:DARK_BROWN:1:DARK_PEACH:1:DARK_TAN:1:ECRU:1:PALE_BROWN:1:PALE_CHESTNUT:1:PALE_PINK:1:PEACH:1:PINK:1:RAW_UMBER:1:SEPIA:1:TAN:1:TAUPE_PALE:1:TAUPE_SANDY:1]
+				[TLCM_NOUN:skin:SINGULAR]
+		[SET_TL_GROUP:BY_CATEGORY:EYE:EYE]
+			[TL_COLOR_MODIFIER:IRIS_EYE_ORANGE:1]
+				[TLCM_NOUN:eyes:PLURAL]
+
+[CREATURE:HORNBULL]
+========= Naming ========================================================================
+	[NAME:hornbull:hornbulls:hornbull]
+	[PREFSTRING:strength]
+========= Representation ================================================================
+	[CREATURE_TILE:'U'][COLOR:7:0:0]
+========= Biomes and population information =============================================
+	[DIURNAL]
+	[BENIGN]
+	[MUNDANE]
+	
+	[BIOME:TUNDRA]
+	
+	[POPULATION_NUMBER:35:60]
+	[CLUSTER_NUMBER:3:7]
+	
+	[LARGE_ROAMING][FREQUENCY:30]
+========= Castes ========================================================================
+	[CASTE:FEMALE]
+		[FEMALE]
+		[MULTIPLE_LITTER_RARE]
+		[CASTE_NAME:hornbull:hornbulls:hornbull]
+		[DESCRIPTION:(Size 285) A large hooved animal noted for its thick coat and large curvy hornes.]
+	[CASTE:MALE]
+		[MALE]
+		[CASTE_NAME:hornbull:hornbulls:hornbull]
+		[DESCRIPTION:(Size 285) A large hooved animal noted for its thick coat and large curvy hornes.]
+========= Abilities and disabilities ====================================================
+	[SELECT_CASTE:ALL]
+		[PET_EXOTIC][PETVALUE:300]
+		[NATURAL]
+		[GRAZER:210]
+		
+		[MEANDERER]
+		[WAGON_PULLER]
+		[PACK_ANIMAL][TRADE_CAPACITY:2000]
+========= Body ==========================================================================
+	[SELECT_CASTE:ALL]
+		[BODY:QUADRUPED_HOOF:TAIL:2EYES:2EARS:NOSE:2LUNGS:HEART:GUTS:ORGANS:THROAT:NECK:SPINE:BRAIN:SKULL:MOUTH:TONGUE:GENERIC_TEETH:RIBCAGE]
+		[HOMEOTHERM:10067]
+========= Body materials ================================================================
+	[SELECT_CASTE:ALL]
+		[BODY_DETAIL_PLAN:STRONG_MATERIALS]
+		[BODY_DETAIL_PLAN:STRONG_TISSUES]
+		[BODY_DETAIL_PLAN:STANDARD_HEAD_POSITIONS]
+		[BODY_DETAIL_PLAN:HUMANOID_RIBCAGE_POSITIONS]
+		[BODY_DETAIL_PLAN:VERTEBRATE_TISSUE_LAYERS:SKIN:FAT:MUSCLE:BONE:CARTILAGE]
+		[BODY_DETAIL_PLAN:BODY_HAIR_TISSUE_LAYERS:HAIR]
+		
+		[USE_MATERIAL_TEMPLATE:HOOF:HOOF_TEMPLATE]
+		[USE_MATERIAL_TEMPLATE:SINEW:SINEW_TEMPLATE]
+		[USE_MATERIAL_TEMPLATE:BLOOD:BLOOD_TEMPLATE]
+		[USE_MATERIAL_TEMPLATE:PUS:PUS_TEMPLATE]
+		
+		[USE_TISSUE_TEMPLATE:HOOF:HOOF_TEMPLATE]
+
+		[TENDONS:LOCAL_CREATURE_MAT:SINEW:200]
+		[LIGAMENTS:LOCAL_CREATURE_MAT:SINEW:200]
+		[BLOOD:LOCAL_CREATURE_MAT:BLOOD:LIQUID]
+		[PUS:LOCAL_CREATURE_MAT:PUS:LIQUID]
+			
+		[SELECT_TISSUE_LAYER:HEART:BY_CATEGORY:HEART]
+		 [PLUS_TISSUE_LAYER:SKIN:BY_CATEGORY:THROAT]
+			[TL_MAJOR_ARTERIES]
+		
+		[SELECT_TISSUE:HAIR]
+				[INSULATION:200]
+		
+		[HAS_NERVES]
+========= Syndromes and curses relation =================================================
+	[SELECT_CASTE:ALL]
+		[CREATURE_CLASS:GENERAL_POISON]
+		[CREATURE_CLASS:ANIMAL]
+		[GETS_WOUND_INFECTIONS]
+		[GETS_INFECTIONS_FROM_ROT]
+========= Attributes and skills =========================================================
+	[SELECT_CASTE:ALL]
+		[SWIMS_INNATE][SWIM_SPEED:2500]
+
+		[SOUND:ALERT:50:2500:VOCALIZATION:moo:moos:a moo]
+		[SOUND:PEACEFUL_INTERMITTENT:35:15000:VOCALIZATION:moo:moos:a moo]
+========= Growth and procreation ========================================================
+	[SELECT_CASTE:ALL]
+		[MAXAGE:10:20]	
+		[CHILD:1]
+			[GENERAL_CHILD_NAME:hornbull calf:hornbull calves]
+		[BODY_SIZE:0:0:285000]
+========= Attacks =======================================================================
+	[SELECT_CASTE:ALL]
+		[ATTACK:KICK:BODYPART:BY_CATEGORY:HOOF_FRONT]
+			[ATTACK_SKILL:STANCE_STRIKE]
+			[ATTACK_VERB:kick:kicks]
+			[ATTACK_CONTACT_PERC:100]
+			[ATTACK_PRIORITY:MAIN]
+			[ATTACK_FLAG_WITH]
+		[ATTACK:KICK:BODYPART:BY_CATEGORY:HOOF_REAR]
+			[ATTACK_SKILL:STANCE_STRIKE]
+			[ATTACK_VERB:kick:kicks]
+			[ATTACK_CONTACT_PERC:100]
+			[ATTACK_PRIORITY:MAIN]
+			[ATTACK_FLAG_WITH]
+		[ATTACK:BITE:CHILD_BODYPART_GROUP:BY_CATEGORY:MOUTH:BY_CATEGORY:TOOTH]
+			[ATTACK_SKILL:BITE]
+			[ATTACK_VERB:bite:bites]
+			[ATTACK_CONTACT_PERC:100]
+			[ATTACK_PENETRATION_PERC:100]
+			[ATTACK_FLAG_EDGE]
+			[ATTACK_PRIORITY:SECOND]
+			[ATTACK_FLAG_CANLATCH]
+========= Body appearance modifiers =====================================================
+	[SELECT_CASTE:ALL]
+		[BODY_APPEARANCE_MODIFIER:LENGTH:90:95:98:100:102:105:110]
+		[BODY_APPEARANCE_MODIFIER:HEIGHT:90:95:98:100:102:105:110]
+		[BODY_APPEARANCE_MODIFIER:BROADNESS:90:95:98:100:102:105:110]
+========= Personality ===================================================================
+	[SELECT_CASTE:ALL]
+========= Appearance ====================================================================
+	[SELECT_CASTE:ALL]
+		[SET_TL_GROUP:BY_CATEGORY:ALL:HAIR]
+			[TL_COLOR_MODIFIER:BROWN:1]
+				[TLCM_NOUN:hair:SINGULAR]
+		[SET_TL_GROUP:BY_CATEGORY:ALL:SKIN]
+	[TL_COLOR_MODIFIER:BROWN:1:BURNT_UMBER:1:CINNAMON:1:COPPER:1:DARK_BROWN:1:DARK_PEACH:1:DARK_TAN:1:ECRU:1:PALE_BROWN:1:PALE_CHESTNUT:1:PALE_PINK:1:PEACH:1:PINK:1:RAW_UMBER:1:SEPIA:1:TAN:1:TAUPE_PALE:1:TAUPE_SANDY:1]
+				[TLCM_NOUN:skin:SINGULAR]
+		[SET_TL_GROUP:BY_CATEGORY:EYE:EYE]
+			[TL_COLOR_MODIFIER:BLACK:1]
+				[TLCM_NOUN:eyes:PLURAL]
+
+[CREATURE:MAMMOTH]
+========= Naming ========================================================================
+	[NAME:mammoth:mammoths:mammoth]
+	[PREFSTRING:strength]
+========= Representation ================================================================
+	[CREATURE_TILE:'M']
+	[COLOR:6:0:0]
+========= Biomes and population information =============================================
+	[DIURNAL]
+	[BENIGN]
+	[MUNDANE]
+	
+	[BIOME:TUNDRA]
+	
+	[POPULATION_NUMBER:15:30]
+	[CLUSTER_NUMBER:3:7]
+	
+	[LARGE_ROAMING][FREQUENCY:15]
+========= Castes ========================================================================
+	[CASTE:FEMALE]
+		[FEMALE]
+		[MULTIPLE_LITTER_RARE]
+		[CASTE_NAME:mammoth:mammoths:mammoth]
+		[DESCRIPTION:(Size 5000) A huge, hairy mammal with a trunk, found grazing in tundra and migrating through glaciers. When angered, it will attack with its long tusks.]
+	[CASTE:MALE]
+		[MALE]
+		[CASTE_NAME:mammoth:mammoths:mammoth]
+		[DESCRIPTION:(Size 5000) A huge, hairy mammal with a trunk, found grazing in grasslands in groups.  When angered, it will attack with its long tusks.]
+========= Abilities and disabilities ====================================================
+	[SELECT_CASTE:ALL]
+		[PET_EXOTIC][PETVALUE:500]
+		[NATURAL]
+		[MOUNT_EXOTIC]
+		[TRAINABLE_WAR]
+		[GRAZER:100]
+		
+		[MEANDERER]
+
+		[SOUND:ALERT:50:2500:VOCALIZATION:trumpet:trumpets:a trumpet sound]
+		[SOUND:PEACEFUL_INTERMITTENT:35:15000:VOCALIZATION:trumpet:trumpets:a trumpet sound]
+========= Body ==========================================================================
+	[SELECT_CASTE:ALL]
+		[BODY:QUADRUPED:TAIL:2EYES:2EARS:TRUNK:2LUNGS:HEART:GUTS:ORGANS:THROAT:NECK:SPINE:BRAIN:SKULL:MOUTH:TONGUE:2TUSKS:GENERIC_TEETH:RIBCAGE]
+		[HOMEOTHERM:10066]
+========= Body materials ================================================================
+	[SELECT_CASTE:ALL]
+		[BODY_DETAIL_PLAN:STRONG_MATERIALS]
+		[BODY_DETAIL_PLAN:STRONG_TISSUES]
+		[BODY_DETAIL_PLAN:VERTEBRATE_TISSUE_LAYERS:SKIN:FAT:MUSCLE:BONE:CARTILAGE]
+		[BODY_DETAIL_PLAN:BODY_HAIR_TISSUE_LAYERS:HAIR]
+		[BODY_DETAIL_PLAN:STANDARD_HEAD_POSITIONS]
+		[BODY_DETAIL_PLAN:HUMANOID_RIBCAGE_POSITIONS]
+		
+		[USE_MATERIAL_TEMPLATE:SINEW:SINEW_TEMPLATE]
+		[USE_MATERIAL_TEMPLATE:BLOOD:BLOOD_TEMPLATE]
+		[USE_MATERIAL_TEMPLATE:PUS:PUS_TEMPLATE]
+		[USE_MATERIAL_TEMPLATE:IVORY:TOOTH_TEMPLATE]
+				[STATE_NAME:ALL_SOLID:ivory]
+				[STATE_ADJ:ALL_SOLID:ivory]
+
+		[USE_TISSUE_TEMPLATE:IVORY:IVORY_TEMPLATE]
+			[TISSUE_NAME:ivory:NP]
+		
+		[TENDONS:LOCAL_CREATURE_MAT:SINEW:200]
+		[LIGAMENTS:LOCAL_CREATURE_MAT:SINEW:200]
+		[BLOOD:LOCAL_CREATURE_MAT:BLOOD:LIQUID]
+		[PUS:LOCAL_CREATURE_MAT:PUS:LIQUID]
+		
+		[SELECT_TISSUE_LAYER:HEART:BY_CATEGORY:HEART]
+		 [PLUS_TISSUE_LAYER:SKIN:BY_CATEGORY:THROAT]
+			[TL_MAJOR_ARTERIES]
+		
+		[HAS_NERVES]
+========= Syndromes and curses relation =================================================
+	[SELECT_CASTE:ALL]
+		[CREATURE_CLASS:GENERAL_POISON]
+		[CREATURE_CLASS:ANIMAL]
+		[GETS_WOUND_INFECTIONS]
+		[GETS_INFECTIONS_FROM_ROT]
+========= Attributes and skills =========================================================
+	[SELECT_CASTE:ALL]
+		[SWIMS_INNATE][SWIM_SPEED:2500]
+========= Growth and procreation ========================================================
+	[SELECT_CASTE:ALL]
+		[MAXAGE:50:70]
+		[CHILD:5]
+			[GENERAL_CHILD_NAME:mammoth calf:mammoth calves]
+		[BODY_SIZE:0:0:5000000]
+========= Attacks =======================================================================
+	[SELECT_CASTE:ALL]
+		[ATTACK:KICK:BODYPART:BY_CATEGORY:FOOT_FRONT]
+			[ATTACK_SKILL:STANCE_STRIKE]
+			[ATTACK_VERB:kick:kicks]
+			[ATTACK_CONTACT_PERC:100]
+			[ATTACK_PRIORITY:MAIN]
+			[ATTACK_FLAG_WITH]
+		[ATTACK:GORE:BODYPART:BY_CATEGORY:TUSK]
+			[ATTACK_SKILL:BITE]
+			[ATTACK_VERB:gore:gores]
+			[ATTACK_CONTACT_PERC:100]
+			[ATTACK_PRIORITY:MAIN]
+			[ATTACK_FLAG_WITH]
+========= Body appearance modifiers =====================================================
+	[SELECT_CASTE:ALL]
+		[BODY_APPEARANCE_MODIFIER:LENGTH:90:95:98:100:102:105:110]
+		[BODY_APPEARANCE_MODIFIER:HEIGHT:90:95:98:100:102:105:110]
+		[BODY_APPEARANCE_MODIFIER:BROADNESS:90:95:98:100:102:105:110]
+========= Personality ===================================================================
+========= Appearance ====================================================================
+	[SELECT_CASTE:ALL]
+		[SET_TL_GROUP:BY_CATEGORY:ALL:HAIR]
+			[TL_COLOR_MODIFIER:LIGHT_BROWN:1]
+				[TLCM_NOUN:hair:SINGULAR]
+		[SET_TL_GROUP:BY_CATEGORY:ALL:SKIN]
+			[TL_COLOR_MODIFIER:GRAY:1]
+				[TLCM_NOUN:skin:SINGULAR]
+		[SET_TL_GROUP:BY_CATEGORY:EYE:EYE]
+			[TL_COLOR_MODIFIER:IRIS_EYE_BROWN:1:IRIS_EYE_GOLD:1:IRIS_EYE_YELLOW:1]
+				[TLCM_NOUN:eyes:PLURAL]
+
+[CREATURE:MOOSE]
+========= Naming ========================================================================
+	[NAME:moose:moose:moose]
+	[PREFSTRING:large size]
+	[PREFSTRING:broad antlers]
+========= Representation ================================================================
+	[CREATURE_TILE:'U'][COLOR:3:0:0]
+========= Biomes and population information =============================================
+	[DIURNAL]
+	[BENIGN]
+	[MUNDANE]
+	
+	
+	[BIOME:FOREST_TAIGA]
+	
+	[POPULATION_NUMBER:15:30]
+	[CLUSTER_NUMBER:1:2]
+	
+	[LARGE_ROAMING][FREQUENCY:20]
+========= Castes ========================================================================
+	[CASTE:FEMALE]
+		[FEMALE]
+		[CASTE_NAME:moose:moose:moose]
+		[MULTIPLE_LITTER_RARE]
+		[DESCRIPTION:(Size 315) A large mammal with great antlers and a large nose. It lives in temperate forests.]
+	[CASTE:MALE]
+		[MALE]
+		[CASTE_NAME:moose:moose:moose]
+		[DESCRIPTION:(Size 525) A large mammal with great antlers and a large nose. It lives in temperate forests.]
+========= Abilities and disabilities ====================================================
+	[SELECT_CASTE:ALL]
+		[PET_EXOTIC][PETVALUE:300]
+		[MOUNT_EXOTIC]
+		[NATURAL]
+		
+		[GRAZER:190]
+		
+		[MEANDERER]
+
+		[SOUND:PEACEFUL_INTERMITTENT:45:15000:VOCALIZATION:bellow:bellows:a bellow]
+========= Body ==========================================================================
+	[SELECT_CASTE:FEMALE]
+		[BODY:QUADRUPED_HOOF:TAIL:2EYES:2EARS:NOSE:2LUNGS:HEART:GUTS:ORGANS:THROAT:NECK:SPINE:BRAIN:SKULL:MOUTH:TONGUE:GENERIC_TEETH:RIBCAGE]
+		[HOMEOTHERM:10067]
+	[SELECT_CASTE:MALE]
+		[BODY:QUADRUPED_HOOF:TAIL:2EYES:2EARS:NOSE:2LUNGS:HEART:GUTS:ORGANS:THROAT:NECK:SPINE:BRAIN:SKULL:MOUTH:TONGUE:GENERIC_TEETH:RIBCAGE:2HEAD_ANTLER]
+		[HOMEOTHERM:10067]
+========= Body materials ================================================================
+	[SELECT_CASTE:ALL]
+		[BODY_DETAIL_PLAN:STANDARD_MATERIALS]
+		[BODY_DETAIL_PLAN:STANDARD_TISSUES]
+		[BODY_DETAIL_PLAN:VERTEBRATE_TISSUE_LAYERS:SKIN:FAT:MUSCLE:BONE:CARTILAGE]
+		[BODY_DETAIL_PLAN:BODY_HAIR_TISSUE_LAYERS:HAIR]
+		[BODY_DETAIL_PLAN:STANDARD_HEAD_POSITIONS]
+		[BODY_DETAIL_PLAN:HUMANOID_RIBCAGE_POSITIONS]
+		
+		[USE_MATERIAL_TEMPLATE:HOOF:HOOF_TEMPLATE]
+		[USE_MATERIAL_TEMPLATE:HORN:HORN_TEMPLATE]
+		[USE_MATERIAL_TEMPLATE:SINEW:SINEW_TEMPLATE]
+		[USE_MATERIAL_TEMPLATE:BLOOD:BLOOD_TEMPLATE]
+		[USE_MATERIAL_TEMPLATE:PUS:PUS_TEMPLATE]
+		
+		[USE_TISSUE_TEMPLATE:HOOF:HOOF_TEMPLATE]
+		[USE_TISSUE_TEMPLATE:HORN:HORN_TEMPLATE]
+		
+		[TENDONS:LOCAL_CREATURE_MAT:SINEW:200]
+		[LIGAMENTS:LOCAL_CREATURE_MAT:SINEW:200]
+		[BLOOD:LOCAL_CREATURE_MAT:BLOOD:LIQUID]
+		[PUS:LOCAL_CREATURE_MAT:PUS:LIQUID]
+		
+		[SELECT_TISSUE_LAYER:HEART:BY_CATEGORY:HEART]
+		 [PLUS_TISSUE_LAYER:SKIN:BY_CATEGORY:THROAT]
+			[TL_MAJOR_ARTERIES]
+
+		[HAS_NERVES]			
+========= Syndromes and curses relation =================================================
+	[SELECT_CASTE:ALL]
+		[CREATURE_CLASS:GENERAL_POISON]
+		[CREATURE_CLASS:ANIMAL]
+		[GETS_WOUND_INFECTIONS]
+		[GETS_INFECTIONS_FROM_ROT]
+========= Attributes and skills =========================================================
+	[SELECT_CASTE:ALL]
+		[SWIMS_INNATE][SWIM_SPEED:2500]
+========= Growth and procreation ========================================================
+	[SELECT_CASTE:ALL]
+		[MAXAGE:15:25]	
+		[CHILD:1]
+			[GENERAL_CHILD_NAME:moose calf:moose calves]
+	[SELECT_CASTE:FEMALE]
+		[BODY_SIZE:0:0:315000]
+	[SELECT_CASTE:MALE]
+		[BODY_SIZE:0:0:525000]
+========= Attacks =======================================================================
+	[SELECT_CASTE:ALL]
+		[ATTACK:KICK:BODYPART:BY_CATEGORY:HOOF_FRONT]
+			[ATTACK_SKILL:STANCE_STRIKE]
+			[ATTACK_VERB:kick:kicks]
+			[ATTACK_CONTACT_PERC:100]
+			[ATTACK_PRIORITY:MAIN]
+			[ATTACK_FLAG_WITH]
+		[ATTACK:KICK:BODYPART:BY_CATEGORY:HOOF_REAR]
+			[ATTACK_SKILL:STANCE_STRIKE]
+			[ATTACK_VERB:kick:kicks]
+			[ATTACK_CONTACT_PERC:100]
+			[ATTACK_PRIORITY:MAIN]
+			[ATTACK_FLAG_WITH]
+		[ATTACK:BITE:CHILD_BODYPART_GROUP:BY_CATEGORY:MOUTH:BY_CATEGORY:TOOTH]
+			[ATTACK_SKILL:BITE]
+			[ATTACK_VERB:bite:bites]
+			[ATTACK_CONTACT_PERC:100]
+			[ATTACK_PENETRATION_PERC:100]
+			[ATTACK_FLAG_EDGE]
+			[ATTACK_PRIORITY:SECOND]
+			[ATTACK_FLAG_CANLATCH]
+	
+	[SELECT_CASTE:MALE]
+			[ATTACK:HGORE:BODYPART:BY_CATEGORY:HORN]
+			[ATTACK_SKILL:BITE]
+			[ATTACK_VERB:gore:gores]
+			[ATTACK_CONTACT_PERC:100]
+			[ATTACK_FLAG_WITH]
+			[ATTACK_PRIORITY:MAIN]
+========= Body appearance modifiers =====================================================
+	[SELECT_CASTE:ALL]
+		[BODY_APPEARANCE_MODIFIER:LENGTH:90:95:98:100:102:105:110]
+		[BODY_APPEARANCE_MODIFIER:HEIGHT:90:95:98:100:102:105:110]
+		[BODY_APPEARANCE_MODIFIER:BROADNESS:90:95:98:100:102:105:110]
+========= Personality ===================================================================
+========= Appearance ====================================================================
+	[SELECT_CASTE:ALL]
+		[SET_TL_GROUP:BY_CATEGORY:ALL:HAIR]
+			[TL_COLOR_MODIFIER:BROWN:1]
+				[TLCM_NOUN:hair:SINGULAR]
+		[SET_TL_GROUP:BY_CATEGORY:ALL:SKIN]
+			[TL_COLOR_MODIFIER:BROWN:1:BURNT_UMBER:1:CINNAMON:1:COPPER:1:DARK_BROWN:1:DARK_PEACH:1:DARK_TAN:1:ECRU:1:PALE_BROWN:1:PALE_CHESTNUT:1:PALE_PINK:1:PEACH:1:PINK:1:RAW_UMBER:1:SEPIA:1:TAN:1:TAUPE_PALE:1:TAUPE_SANDY:1]
+				[TLCM_NOUN:skin:SINGULAR]
+		[SET_TL_GROUP:BY_CATEGORY:EYE:EYE]
+			[TL_COLOR_MODIFIER:IRIS_EYE_BROWN:1]
+				[TLCM_NOUN:eyes:PLURAL]

@@ -1,0 +1,42 @@
+item_toy
+
+[OBJECT:ITEM]
+
+[ITEM_TOY:ITEM_TOY_PUZZLEBOX]
+[NAME:puzzlebox:puzzleboxes]
+[HARD_MAT]
+
+[ITEM_TOY:ITEM_TOY_MARBLESET]
+[NAME:marble set:marble sets]
+[HARD_MAT]
+
+[ITEM_TOY:ITEM_TOY_BOAT]
+[NAME:toy boat:toy boats]
+[HARD_MAT]
+
+[ITEM_TOY:ITEM_TOY_AXE]
+[NAME:toy axe:toy axes]
+[HARD_MAT]
+
+[ITEM_TOY:ITEM_TOY_DICE]
+[NAME:dice:dice]
+[HARD_MAT]
+
+[ITEM_TOY:ITEM_TOY_HAMMER]
+[NAME:toy hammer:toy hammers]
+[HARD_MAT]
+
+[ITEM_TOY:ITEM_TOY_WAGON]
+[NAME:toy wagon:toy wagons]
+[HARD_MAT]
+
+[ITEM_TOY:ITEM_TOY_MINIFORGE]
+[NAME:mini-forge:mini-forges]
+[HARD_MAT]
+
+[ITEM_TOY:ITEM_TOY_MEDALLION]
+[NAME:medallion:medallions]
+[HARD_MAT]
+
+[ITEM_TOY:ITEM_TOY_FLOWER]
+[NAME:flower:flowers]

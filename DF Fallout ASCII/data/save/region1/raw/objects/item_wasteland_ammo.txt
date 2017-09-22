@@ -1,0 +1,21 @@
+item_wasteland_ammo
+
+[OBJECT:ITEM]
+
+[ITEM_AMMO:ITEM_AMMO_BULLETS]
+	[NAME:bullet:ammo]
+	[CLASS:AMMO]
+	[SIZE:150]
+	[ATTACK:EDGE:2:500:stab:stabs:NO_SUB:100]
+
+[ITEM_AMMO:ITEM_AMMO_PELLETS]
+	[NAME:pellet:pellets]
+	[CLASS:PELLET]
+	[SIZE:80]
+	[ATTACK:EDGE:4:100:stab:stabs:NO_SUB:50]
+
+[ITEM_AMMO:ITEM_AMMO_BOLTS]
+	[NAME:bolt:bolts]
+	[CLASS:BOLT]
+	[SIZE:100]
+	[ATTACK:EDGE:2:100:attack:attacks:NO_SUB:10]

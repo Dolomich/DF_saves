@@ -1,0 +1,318 @@
+creature_wasteland_plant
+
+[OBJECT:CREATURE]
+
+[CREATURE:spore plant]
+========= Naming ========================================================================
+	[NAME:spore plant:spore plants:spore plant]
+	[PREFSTRING:toothy maw]
+========= Representation ================================================================
+	[CREATURE_TILE:'t'][COLOR:2:0:0]
+========= Pet information ===============================================================
+	[PETVALUE:300]
+========= Biomes and population information =============================================
+	[BIOME:ANY_TEMPERATE]
+	[BIOME:ANY_TROPICAL]
+	[BIOME:ANY_FOREST]
+	[BIOME:ANY_WETLAND]
+	[POPULATION_NUMBER:50:80]
+	[CLUSTER_NUMBER:3:8]
+	[LARGE_ROAMING][LARGE_PREDATOR]
+	[FREQUENCY:15]
+	
+	[ALL_ACTIVE]
+	[NATURAL]
+========= Castes ========================================================================
+	[CASTE:MALE]
+		[NO_GENDER]
+		[CASTE_NAME:spore plant:spore plants:spore plant]
+		[DESCRIPTION:(Size 80) Spore plants are mutated Venus Flytrap. Before the Great War, they could be found in nitrogen rich and phosphorus-poor environments. They had a trapping structure formed by the terminal portion of each of the plant's leaves. Prey triggered tiny hairs on their inner surfaces, which allowed them to feed. After the Great War they were experimented on and mutated as a part of the botanical and agricultural experiments of some vaults. After the opening of those vaults, the plants were spread by seeds and spores carried by wind across the world.]
+		[SMALL_REMAINS]
+========= Body ==========================================================================
+	[SELECT_CASTE:ALL]
+		[BODY:SPORE_PLANT]
+		[HOMEOTHERM:10027]
+========= Body materials ================================================================
+	[SELECT_CASTE:ALL]
+		[USE_MATERIAL_TEMPLATE:WOOD:WOOD_TEMPLATE]
+			[STATE_NAME:ALL_SOLID:wood]
+			[STATE_NAME_ADJ:ALL_SOLID:wood]
+			[STATE_NAME:LIQUID:trickling wood]
+			[STATE_NAME_ADJ:LIQUID:trickling wood]
+			[STATE_NAME:GAS:boiling wood]
+			[STATE_NAME_ADJ:GAS:boiling wood]
+			[STATE_COLOR:ALL:BROWN]
+			[PREFIX:NONE]
+			
+		[USE_MATERIAL_TEMPLATE:SPONGEDWOOD:BRAIN_TEMPLATE]
+			[STATE_NAME:ALL_SOLID:sponged wood]
+			[STATE_NAME_ADJ:ALL_SOLID:sponged wood]
+			[STATE_NAME:LIQUID:trickling sponged wood]
+			[STATE_NAME_ADJ:LIQUID:trickling sponged wood]
+			[STATE_NAME:GAS:boiling sponged wood]
+			[STATE_NAME_ADJ:GAS:boiling sponged wood]
+			[STATE_COLOR:ALL:BROWN]
+			[PREFIX:NONE]
+
+		[USE_MATERIAL_TEMPLATE:SAP:BLOOD_TEMPLATE]
+			[STATE_NAME:ALL_SOLID:frozen sap]
+			[STATE_NAME_ADJ:ALL_SOLID:frozen sap]
+			[STATE_NAME:LIQUID:sap]
+			[STATE_NAME_ADJ:LIQUID:sap]
+			[STATE_NAME:GAS:boiling sap]
+			[STATE_NAME_ADJ:GAS:boiling sap]
+			[STATE_COLOR:ALL:GREEN]
+			[PREFIX:NONE]
+
+		[USE_MATERIAL_TEMPLATE:BLACKSAP:PUS_TEMPLATE]
+			[STATE_NAME:ALL_SOLID:frozen black sap]
+			[STATE_NAME_ADJ:ALL_SOLID:frozen black sap]
+			[STATE_NAME:LIQUID:black sap]
+			[STATE_NAME_ADJ:LIQUID:black sap]
+			[STATE_NAME:GAS:boiling black sap]
+			[STATE_NAME_ADJ:GAS:boiling black sap]
+			[STATE_COLOR:ALL:BLACK]
+			[PREFIX:NONE]
+
+		[TISSUE:BARK]
+			[TISSUE_NAME:bark:NP]
+			[TISSUE_MATERIAL:LOCAL_CREATURE_MAT:WOOD]
+			[TISSUE_MAT_STATE:SOLID]
+			[SCARS]
+			[RELATIVE_THICKNESS:2]
+			[HEALING_RATE:80]
+			[CONNECTS]
+			[TISSUE_SHAPE:LAYER]		
+
+		[TISSUE:WOOD]
+			[TISSUE_NAME:wood:NP]
+			[TISSUE_MATERIAL:LOCAL_CREATURE_MAT:WOOD]
+			[TISSUE_MAT_STATE:SOLID]
+			[MUSCULAR]
+			[FUNCTIONAL]
+			[STRUCTURAL]
+			[VASCULAR:2]
+			[RELATIVE_THICKNESS:50]
+			[HEALING_RATE:130]
+			[CONNECTS]
+			[TISSUE_SHAPE:LAYER]
+			
+		[TISSUE:SPONGEDWOOD]
+			[TISSUE_NAME:sponged wood:NP]
+			[TISSUE_MATERIAL:LOCAL_CREATURE_MAT:SPONGEDWOOD]
+			[TISSUE_MAT_STATE:SOLID]
+			[MUSCULAR]
+			[FUNCTIONAL]
+			[STRUCTURAL]
+			[VASCULAR:50]
+			[RELATIVE_THICKNESS:1]
+			[HEALING_RATE:70]
+			[CONNECTS]
+			[TISSUE_SHAPE:LAYER]
+		
+
+
+		[TISSUE_LAYER:BY_CATEGORY:ALL:WOOD]
+		[TISSUE_LAYER:BY_CATEGORY:ALL:BARK]
+				
+		[TISSUE_LAYER:BY_CATEGORY:HEART:SPONGEDWOOD]
+		[TISSUE_LAYER:BY_CATEGORY:BRAIN:SPONGEDWOOD]
+		
+		[BLOOD:LOCAL_CREATURE_MAT:SAP:LIQUID]
+		[PUS:LOCAL_CREATURE_MAT:BLACKSAP:LIQUID]
+		
+		[BODY_DETAIL_PLAN:STANDARD_HEAD_POSITIONS]
+		[BODY_DETAIL_PLAN:HUMANOID_HEAD_POSITIONS]
+		[BODY_DETAIL_PLAN:HUMANOID_RIBCAGE_POSITIONS]
+		[BODY_DETAIL_PLAN:HUMANOID_RELSIZES]
+		
+		[SELECT_TISSUE_LAYER:SPONGEDWOOD:BY_CATEGORY:HEART]
+			[TL_MAJOR_ARTERIES]
+
+========= Syndromes and curses relation =================================================
+	[SELECT_CASTE:ALL]
+			[CREATURE_CLASS:PLANT]
+========= Abilities and disabilities ====================================================
+	[SELECT_CASTE:ALL]
+		[SPEED:1800]
+========= Attributes and skills =========================================================
+	[SELECT_CASTE:ALL]
+		[SWIMS_INNATE][SWIM_SPEED:2500]
+========= Growth and procreation ========================================================
+	[SELECT_CASTE:ALL]
+		[BODY_SIZE:0:0:80000]
+========= Attacks =======================================================================
+	[SELECT_CASTE:ALL]
+		[ATTACK:BITE:BODYPART:BY_TYPE:HEAD]
+			[ATTACK_SKILL:BITE]
+			[ATTACK_VERB:bite:bites]
+			[ATTACK_CONTACT_PERC:100]
+			[ATTACK_PENETRATION_PERC:100]
+			[ATTACK_FLAG_EDGE]
+			[ATTACK_PRIORITY:MAIN]
+			[ATTACK_FLAG_CANLATCH]
+		[ATTACK:PUNCH:BODYPART:BY_TYPE:LIMB]
+			[ATTACK_SKILL:GRASP_STRIKE]
+			[ATTACK_VERB:lash:lashes]
+			[ATTACK_CONTACT_PERC:100]
+			[ATTACK_FLAG_WITH]
+			[ATTACK_PRIORITY:MAIN]
+========= Body appearance modifiers =====================================================
+========= Personality ===================================================================
+========= Appearance ====================================================================
+	[SELECT_CASTE:ALL]
+		[SET_TL_GROUP:BY_CATEGORY:ALL:BARK]
+			[TL_COLOR_MODIFIER:GREEN:1]
+				[TLCM_NOUN:bark:SINGULAR]
+
+[CREATURE:sporeling]
+========= Naming ========================================================================
+	[NAME:sporeling:sporelings:sporeling]
+	[PREFSTRING:slimy surface]
+========= Representation ================================================================
+	[CREATURE_TILE:'t'][COLOR:6:0:0]
+========= Pet information ===============================================================
+	[PETVALUE:200]
+========= Biomes and population information =============================================
+	[BIOME:ANY_WETLAND]
+	[POPULATION_NUMBER:50:80]
+	[CLUSTER_NUMBER:3:8]
+	[LARGE_ROAMING][LARGE_PREDATOR]
+	[FREQUENCY:15]
+	
+	[ALL_ACTIVE]
+	[NATURAL]
+========= Castes ========================================================================
+	[CASTE:MALE]
+		[NO_GENDER]
+		[CASTE_NAME:sporeling:sporelings:sporeling]
+		[DESCRIPTION:(Size 30) A half-sentient plant-shroom hybrid, these strange creatures often live in bogs and marshes. Unprovoked they don't cause too much harm.]
+		[SMALL_REMAINS]
+========= Body ==========================================================================
+	[SELECT_CASTE:ALL]
+		[BODY:THALLID]
+		[HOMEOTHERM:10027]
+========= Body materials ================================================================
+	[SELECT_CASTE:ALL]
+		[USE_MATERIAL_TEMPLATE:WOOD:WOOD_TEMPLATE]
+			[STATE_NAME:ALL_SOLID:wood]
+			[STATE_NAME_ADJ:ALL_SOLID:wood]
+			[STATE_NAME:LIQUID:trickling wood]
+			[STATE_NAME_ADJ:LIQUID:trickling wood]
+			[STATE_NAME:GAS:boiling wood]
+			[STATE_NAME_ADJ:GAS:boiling wood]
+			[STATE_COLOR:ALL:BROWN]
+			[PREFIX:NONE]
+			
+		[USE_MATERIAL_TEMPLATE:SPONGEDWOOD:BRAIN_TEMPLATE]
+			[STATE_NAME:ALL_SOLID:sponged wood]
+			[STATE_NAME_ADJ:ALL_SOLID:sponged wood]
+			[STATE_NAME:LIQUID:trickling sponged wood]
+			[STATE_NAME_ADJ:LIQUID:trickling sponged wood]
+			[STATE_NAME:GAS:boiling sponged wood]
+			[STATE_NAME_ADJ:GAS:boiling sponged wood]
+			[STATE_COLOR:ALL:BROWN]
+			[PREFIX:NONE]
+
+		[USE_MATERIAL_TEMPLATE:SAP:BLOOD_TEMPLATE]
+			[STATE_NAME:ALL_SOLID:frozen sap]
+			[STATE_NAME_ADJ:ALL_SOLID:frozen sap]
+			[STATE_NAME:LIQUID:sap]
+			[STATE_NAME_ADJ:LIQUID:sap]
+			[STATE_NAME:GAS:boiling sap]
+			[STATE_NAME_ADJ:GAS:boiling sap]
+			[STATE_COLOR:ALL:GREEN]
+			[PREFIX:NONE]
+
+		[USE_MATERIAL_TEMPLATE:BLACKSAP:PUS_TEMPLATE]
+			[STATE_NAME:ALL_SOLID:frozen black sap]
+			[STATE_NAME_ADJ:ALL_SOLID:frozen black sap]
+			[STATE_NAME:LIQUID:black sap]
+			[STATE_NAME_ADJ:LIQUID:black sap]
+			[STATE_NAME:GAS:boiling black sap]
+			[STATE_NAME_ADJ:GAS:boiling black sap]
+			[STATE_COLOR:ALL:BLACK]
+			[PREFIX:NONE]
+
+		[TISSUE:BARK]
+			[TISSUE_NAME:bark:NP]
+			[TISSUE_MATERIAL:LOCAL_CREATURE_MAT:WOOD]
+			[TISSUE_MAT_STATE:SOLID]
+			[SCARS]
+			[RELATIVE_THICKNESS:2]
+			[HEALING_RATE:80]
+			[CONNECTS]
+			[TISSUE_SHAPE:LAYER]		
+
+		[TISSUE:WOOD]
+			[TISSUE_NAME:wood:NP]
+			[TISSUE_MATERIAL:LOCAL_CREATURE_MAT:WOOD]
+			[TISSUE_MAT_STATE:SOLID]
+			[MUSCULAR]
+			[FUNCTIONAL]
+			[STRUCTURAL]
+			[VASCULAR:2]
+			[RELATIVE_THICKNESS:50]
+			[HEALING_RATE:130]
+			[CONNECTS]
+			[TISSUE_SHAPE:LAYER]
+			
+		[TISSUE:SPONGEDWOOD]
+			[TISSUE_NAME:sponged wood:NP]
+			[TISSUE_MATERIAL:LOCAL_CREATURE_MAT:SPONGEDWOOD]
+			[TISSUE_MAT_STATE:SOLID]
+			[MUSCULAR]
+			[FUNCTIONAL]
+			[STRUCTURAL]
+			[VASCULAR:50]
+			[RELATIVE_THICKNESS:1]
+			[HEALING_RATE:70]
+			[CONNECTS]
+			[TISSUE_SHAPE:LAYER]
+		
+
+
+		[TISSUE_LAYER:BY_CATEGORY:ALL:WOOD]
+		[TISSUE_LAYER:BY_CATEGORY:ALL:BARK]
+				
+		[TISSUE_LAYER:BY_CATEGORY:HEART:SPONGEDWOOD]
+		[TISSUE_LAYER:BY_CATEGORY:BRAIN:SPONGEDWOOD]
+		
+		[BLOOD:LOCAL_CREATURE_MAT:SAP:LIQUID]
+		[PUS:LOCAL_CREATURE_MAT:BLACKSAP:LIQUID]
+		
+		[BODY_DETAIL_PLAN:STANDARD_HEAD_POSITIONS]
+		[BODY_DETAIL_PLAN:HUMANOID_HEAD_POSITIONS]
+		[BODY_DETAIL_PLAN:HUMANOID_RIBCAGE_POSITIONS]
+		[BODY_DETAIL_PLAN:HUMANOID_RELSIZES]
+		
+		[SELECT_TISSUE_LAYER:SPONGEDWOOD:BY_CATEGORY:HEART]
+			[TL_MAJOR_ARTERIES]
+
+========= Syndromes and curses relation =================================================
+	[SELECT_CASTE:ALL]
+			[CREATURE_CLASS:PLANT]
+========= Abilities and disabilities ====================================================
+	[SELECT_CASTE:ALL]
+		[EXTRAVISION]
+========= Attributes and skills =========================================================
+	[SELECT_CASTE:ALL]
+		[SWIMS_INNATE][SWIM_SPEED:2500]
+========= Growth and procreation ========================================================
+	[SELECT_CASTE:ALL]
+		[BODY_SIZE:0:0:30000]
+========= Attacks =======================================================================
+	[SELECT_CASTE:ALL]
+		[ATTACK:PUNCH:BODYPART:BY_TYPE:LIMB]
+			[ATTACK_SKILL:GRASP_STRIKE]
+			[ATTACK_VERB:lash:lashes]
+			[ATTACK_CONTACT_PERC:100]
+			[ATTACK_FLAG_WITH]
+			[ATTACK_PRIORITY:MAIN]
+========= Body appearance modifiers =====================================================
+========= Personality ===================================================================
+========= Appearance ====================================================================
+	[SELECT_CASTE:ALL]
+		[SET_TL_GROUP:BY_CATEGORY:ALL:BARK]
+			[TL_COLOR_MODIFIER:BROWN:1]
+				[TLCM_NOUN:slimy bark:SINGULAR]

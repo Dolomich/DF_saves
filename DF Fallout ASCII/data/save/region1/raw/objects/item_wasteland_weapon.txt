@@ -1,0 +1,273 @@
+item_wasteland_weapon
+
+[OBJECT:ITEM]
+
+*****************************************************************************************************************************************************
+*****************************************************************************************************************************************************
+*********                                                                                                                                   *********
+*********                                                                                                                                   *********
+*********                                                     WEAPONS                                                                       *********
+*********                                                                                                                                   *********
+*********                                                              Wasteland mod, by Deon                                               *********
+*****************************************************************************************************************************************************
+*****************************************************************************************************************************************************
+
+		** Bayonet
+		** Club
+		** Crowbar
+		** Drill
+		** Hacksaw
+		** Knife
+		** Machete
+		** Sledgehammer
+
+		** Crossbow
+		** War crossbow
+		** Pump-action gun
+		** Assault rifle
+		** Rifle
+
+[ITEM_WEAPON:ITEM_WEAPON_BAYONET]
+[NAME:bayonet:bayonets]
+[SIZE:380]
+[SKILL:SPEAR]
+[TWO_HANDED:37500]
+[MINIMUM_SIZE:3000]
+[MATERIAL_SIZE:2]
+[ATTACK:EDGE:20:8000:stab:stabs:NO_SUB:1000]
+[ATTACK:BLUNT:10000:6000:bash:bashes:shaft:1250]
+
+[ITEM_WEAPON:ITEM_WEAPON_CLUB]
+[NAME:club:clubs]
+[SIZE:300]
+[SKILL:MACE]
+[TWO_HANDED:37500]
+[MINIMUM_SIZE:32500]
+[MATERIAL_SIZE:3]
+[ATTACK:BLUNT:4000:100:bash:bashes:NO_SUB:500]
+
+[ITEM_WEAPON:ITEM_WEAPON_CHAINSAW]
+[NAME:chainsaw:chainsaws]
+[SIZE:500]
+[SKILL:AXE]
+[TWO_HANDED:47500]
+[MINIMUM_SIZE:42500]
+[MATERIAL_SIZE:6]
+[ATTACK:EDGE:55000:6000:saw:saws:NO_SUB:4200]
+[ATTACK:BLUNT:25000:2000:slap:slaps:flat:1250]
+[ATTACK:BLUNT:100:1000:strike:strikes:pommel:1000]
+
+[ITEM_WEAPON:ITEM_WEAPON_CHAINSWORD]
+[NAME:chainsword:chainswords]
+[SIZE:350]
+[SKILL:SWORD]
+[TWO_HANDED:37500]
+[MINIMUM_SIZE:32500]
+[CAN_STONE]
+[MATERIAL_SIZE:3]
+[ATTACK:EDGE:50000:8000:gut:guts:NO_SUB:3500]
+[ATTACK:BLUNT:100:1000:strike:strikes:pommel:1000]
+[ATTACK:EDGE:50:2000:stab:stabs:NO_SUB:1000]
+
+[ITEM_WEAPON:ITEM_WEAPON_CROWBAR]
+[NAME:crowbar:crowbars]
+[SIZE:500]
+[SKILL:MACE]
+[TWO_HANDED:37500]
+[MINIMUM_SIZE:32500]
+[MATERIAL_SIZE:3]
+[ATTACK:EDGE:10:4000:bash:bashes:NO_SUB:2000]
+[ATTACK:BLUNT:50:1000:strike:strikes:pommel:1000]
+
+[ITEM_WEAPON:ITEM_WEAPON_DRILL]
+[NAME:drill:drills]
+[SIZE:700]
+[SKILL:MINING]
+[TWO_HANDED:67500]
+[MINIMUM_SIZE:50000]
+[MATERIAL_SIZE:4]
+[ATTACK:EDGE:10:6000:strike:strikes:NO_SUB:2000]
+
+[ITEM_WEAPON:ITEM_WEAPON_HACKSAW]
+[NAME:hacksaw:hacksaws]
+[SIZE:310]
+[SKILL:AXE]
+[TWO_HANDED:47500]
+[MINIMUM_SIZE:42500]
+[MATERIAL_SIZE:4]
+[ATTACK:EDGE:25000:2000:slash:slashes:NO_SUB:1250]
+[ATTACK:BLUNT:18000:2000:slap:slaps:flat:1250]
+[ATTACK:BLUNT:100:1000:strike:strikes:pommel:1000]
+
+[ITEM_WEAPON:ITEM_WEAPON_KNIFE]
+[NAME:knife:knives]
+[SIZE:180]
+[SKILL:DAGGER]
+[TWO_HANDED:27500]
+[MINIMUM_SIZE:5000]
+[MATERIAL_SIZE:1]
+[ATTACK:EDGE:2200:800:slash:slashes:NO_SUB:1250]
+[ATTACK:EDGE:5:1300:stab:stabs:NO_SUB:1000]
+[ATTACK:BLUNT:20:600:strike:strikes:pommel:1000]
+
+[ITEM_WEAPON:ITEM_WEAPON_MACHETE]
+[NAME:machete:machetes]
+[SIZE:300]
+[SKILL:SWORD]
+[TWO_HANDED:37500]
+[MINIMUM_SIZE:32500]
+[CAN_STONE]
+[MATERIAL_SIZE:3]
+[ATTACK:EDGE:45000:5000:hack:hacks:NO_SUB:2000]
+[ATTACK:BLUNT:30000:5000:slap:slaps:flat:1250]
+[ATTACK:BLUNT:100:1000:strike:strikes:pommel:1000]
+[ATTACK:EDGE:50:2000:stab:stabs:NO_SUB:1000]
+
+[ITEM_WEAPON:ITEM_WEAPON_POWERFIST]
+[NAME:powerfist:powerfists]
+[SIZE:300]
+[SKILL:MACE]
+[TWO_HANDED:37500]
+[MINIMUM_SIZE:32500]
+[MATERIAL_SIZE:3]
+[ATTACK:BLUNT:3500:2000:punch:punches:NO_SUB:5000]
+
+[ITEM_WEAPON:ITEM_WEAPON_RIPPER]
+[NAME:ripper:rippers]
+[SIZE:220]
+[SKILL:DAGGER]
+[TWO_HANDED:27500]
+[MINIMUM_SIZE:5000]
+[MATERIAL_SIZE:1]
+[ATTACK:EDGE:15000:5000:gut:guts:NO_SUB:3250]
+[ATTACK:BLUNT:20:600:strike:strikes:pommel:1000]
+
+[ITEM_WEAPON:ITEM_WEAPON_SLEDGEHAMMER]
+[NAME:sledgehammer:sledgehammers]
+[SIZE:1300]
+[SKILL:HAMMER]
+[TWO_HANDED:77500]
+[MINIMUM_SIZE:62500]
+[MATERIAL_SIZE:5]
+[ATTACK:BLUNT:100:6000:bash:bashes:NO_SUB:2000]
+
+[ITEM_WEAPON:ITEM_WEAPON_SUPERSLEDGE]
+[NAME:super sledge:super sledges]
+[SIZE:1450]
+[SKILL:HAMMER]
+[TWO_HANDED:77500]
+[MINIMUM_SIZE:62500]
+[MATERIAL_SIZE:5]
+[ATTACK:BLUNT:150:9000:bash:bashes:NO_SUB:5000]
+
+[ITEM_WEAPON:ITEM_WEAPON_THERMAL_LANCE]
+[NAME:thermal lance:thermal lances]
+[SIZE:600]
+[SKILL:SPEAR]
+[TWO_HANDED:60000]
+[MINIMUM_SIZE:10000]
+[MATERIAL_SIZE:3]
+[ATTACK:EDGE:5:10000:pierce:pierces:NO_SUB:4000]
+[ATTACK:BLUNT:10000:6000:bash:bashes:shaft:1250]
+
+================================================================================
+
+[ITEM_WEAPON:ITEM_WEAPON_AIRGUN]
+[NAME:gun:guns]
+[ADJECTIVE:pump-action]
+[SIZE:400]
+[SKILL:MACE]
+[RANGED:BOW:PELLET]
+[SHOOT_FORCE:100]
+[SHOOT_MAXVEL:60]
+[TWO_HANDED:0]
+[MINIMUM_SIZE:15000]
+[MATERIAL_SIZE:3]
+[ATTACK:BLUNT:10000:400:bash:bashes:NO_SUB:1250]
+
+[ITEM_WEAPON:ITEM_WEAPON_CROSSBOW]
+[NAME:crossbow:crossbows]
+[SIZE:400]
+[SKILL:HAMMER]
+[RANGED:CROSSBOW:BOLT]
+[SHOOT_FORCE:10]
+[SHOOT_MAXVEL:40]  This is just to make sure a near-weightless object doesn't go faster than the string could possibly go.
+[TWO_HANDED:0]
+[MINIMUM_SIZE:15000]
+[MATERIAL_SIZE:3]
+[ATTACK:BLUNT:10000:400:bash:bashes:NO_SUB:1000]
+
+[ITEM_WEAPON:ITEM_WEAPON_CROSSBOW_WAR]
+[NAME:crossbow:crossbows]
+[ADJECTIVE:war]
+[SIZE:400]
+[SKILL:HAMMER]
+[RANGED:CROSSBOW:BOLT]
+[SHOOT_FORCE:10]
+[SHOOT_MAXVEL:40]  This is just to make sure a near-weightless object doesn't go faster than the string could possibly go.
+[TWO_HANDED:0]
+[MINIMUM_SIZE:15000]
+[MATERIAL_SIZE:3]
+[ATTACK:EDGE:20:8000:stab:stabs:bayonet:1000]
+[ATTACK:BLUNT:10000:400:bash:bashes:NO_SUB:1000]
+
+[ITEM_WEAPON:ITEM_WEAPON_AM_RIFLE]
+[NAME:anti-materiel rifle:anti-materiel rifles]
+[SIZE:1500]
+[SKILL:MACE]
+[RANGED:BOW:AMMO]
+[SHOOT_FORCE:20000]
+[SHOOT_MAXVEL:10000]
+[TWO_HANDED:100000]
+[MINIMUM_SIZE:45000]
+[MATERIAL_SIZE:5]
+[ATTACK:BLUNT:10000:400:bash:bashes:NO_SUB:1250]
+
+[ITEM_WEAPON:ITEM_WEAPON_FLAMETHROWER]
+[NAME:flamethrower:flamethrowers]
+[SIZE:700]
+[SKILL:MACE]
+[RANGED:BOW:NONE]
+[SHOOT_FORCE:200]
+[SHOOT_MAXVEL:100]
+[TWO_HANDED:0]
+[MINIMUM_SIZE:15000]
+[MATERIAL_SIZE:3]
+[ATTACK:BLUNT:10000:3000:bash:bashes:NO_SUB:1250]
+
+[ITEM_WEAPON:ITEM_WEAPON_RIFLE]
+[NAME:rifle:rifles]
+[SIZE:400]
+[SKILL:MACE]
+[RANGED:BOW:AMMO]
+[SHOOT_FORCE:200]
+[SHOOT_MAXVEL:100]
+[TWO_HANDED:0]
+[MINIMUM_SIZE:15000]
+[MATERIAL_SIZE:3]
+[ATTACK:BLUNT:10000:400:bash:bashes:NO_SUB:1250]
+
+[ITEM_WEAPON:ITEM_WEAPON_RIFLE_ASSAULT]
+[NAME:assault rifle:assault rifles]
+[SIZE:450]
+[SKILL:SPEAR]
+[RANGED:BOW:AMMO]
+[SHOOT_FORCE:200]
+[SHOOT_MAXVEL:100]
+[TWO_HANDED:0]
+[MINIMUM_SIZE:15000]
+[MATERIAL_SIZE:3]
+[ATTACK:EDGE:20:8000:stab:stabs:bayonet:1000]
+[ATTACK:BLUNT:10000:400:bash:bashes:NO_SUB:1250]
+
+================ SPECIAL =====================
+
+[ITEM_WEAPON:ITEM_WEAPON_CLAW]
+[NAME:bladed gauntlet:bladed gauntlets]
+[SIZE:400]
+[SKILL:DAGGER]
+[TWO_HANDED:27500]
+[MINIMUM_SIZE:5000]
+[MATERIAL_SIZE:1]
+[ATTACK:EDGE:3400:800:slash:slashes:NO_SUB:1250]
+[ATTACK:EDGE:5:3000:stab:stabs:NO_SUB:1000]

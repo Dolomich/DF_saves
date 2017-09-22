@@ -1,0 +1,51 @@
+item_toy
+
+[OBJECT:ITEM]
+
+
+=== Collectibles ===
+
+[ITEM_TOY:ITEM_TOY_BOBBLEHEAD]
+[NAME:bobblehead:bobbleheads]
+[HARD_MAT]
+
+[ITEM_TOY:ITEM_TOY_CHESSBOARD]
+[NAME:chessboard:chessboards]
+[HARD_MAT]
+
+[ITEM_TOY:ITEM_TOY_PUZZLEBOX]
+[NAME:puzzlebox:puzzleboxes]
+[HARD_MAT]
+
+[ITEM_TOY:ITEM_TOY_SNOWGLOBE]
+[NAME:snow globe:snow globes]
+[HARD_MAT]
+
+[ITEM_TOY:ITEM_TOY_CAR]
+[NAME:toy car:toy cars]
+[HARD_MAT]
+
+[ITEM_TOY:ITEM_TOY_PISTOL]
+[NAME:toy pistol:toy pistols]
+[HARD_MAT]
+
+[ITEM_TOY:ITEM_TOY_TRUCK]
+[NAME:toy truck:toy trucks]
+[HARD_MAT]
+
+
+=== Vault and tech ===
+
+[ITEM_TOY:ITEM_TOY_GEARS]
+[NAME:gears:gears]
+[HARD_MAT]
+
+[ITEM_TOY:ITEM_TOY_PEN]
+[NAME:pen:pens]
+[HARD_MAT]
+
+[ITEM_TOY:ITEM_TOY_RADIO]
+[NAME:radio:radios]
+[HARD_MAT]
+
+

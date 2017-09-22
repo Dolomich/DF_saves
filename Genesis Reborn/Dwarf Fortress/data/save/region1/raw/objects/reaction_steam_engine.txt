@@ -1,0 +1,21 @@
+reaction_steam_engine
+
+[OBJECT:REACTION]
+
+[REACTION:STOKE_BOILER]
+	[NAME:stoke boiler]
+	[BUILDING:STEAM_ENGINE:CUSTOM_S]
+	[FUEL]
+	[PRODUCT:100:1:LIQUID_MISC:NONE:WATER][PRODUCT_DIMENSION:2000]
+	[SKILL:SMELT]
+	Dimension is the number of days it can produce 100 power * 100.
+	I.e. with 2000 it means energy of 1 job = 1 water wheel for 20 days.
+
+[REACTION:STOKE_MAGMA_BOILER]
+	[NAME:stoke magma boiler]
+	[BUILDING:MAGMA_STEAM_ENGINE:CUSTOM_S]
+	[PRODUCT:100:1:LIQUID_MISC:NONE:WATER][PRODUCT_DIMENSION:2000]
+	[FUEL]
+	[SKILL:SMELT]
+	Dimension is the number of days it can produce 100 power * 100.
+	I.e. with 2000 it means energy of 1 job = 1 water wheel for 20 days.

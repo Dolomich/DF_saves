@@ -1,0 +1,13 @@
+entity_adventurer
+
+[OBJECT:ENTITY]
+
+[ENTITY:ADVENTURE]
+	[ADVENTURE_TIER:80]
+	[INDIV_CONTROLLABLE]
+	[CREATURE:barbarian class]
+	[CREATURE:magician class]
+	[CREATURE:necromancer class]
+	[CREATURE:treasure hunter class]
+	[CREATURE:vagabond class]
+	[TRANSLATION:LATIN]

@@ -1,0 +1,55 @@
+/DF Fallout ASCII/*
+!/DF Fallout ASCII/data
+/DF Fallout ASCII/data/*
+!/DF Fallout ASCII/data/save
+
+/DF Wanderer R16d ASCII v.0.42.03/*
+!/DF Wanderer R16d ASCII v.0.42.03/data
+/DF Wanderer R16d ASCII v.0.42.03/data/*
+!/DF Wanderer R16d ASCII v.0.42.03/data/save
+
+/DFPP_v1.00
+
+/Genesis Reborn/*
+!/Genesis Reborn/Dwarf Fortress
+/Genesis Reborn/Dwarf Fortress/*
+!/Genesis Reborn/Dwarf Fortress/data
+/Genesis Reborn/Dwarf Fortress/data/*
+!/Genesis Reborn/Dwarf Fortress/data/save
+
+/LegendsViewer-1.14.02
+
+/Modified Masterwork V1.29 (43.05)/*
+!/Modified Masterwork V1.29 (43.05)/Dwarf Fortress
+/Modified Masterwork V1.29 (43.05)/Dwarf Fortress/*
+!/Modified Masterwork V1.29 (43.05)/Dwarf Fortress/data
+/Modified Masterwork V1.29 (43.05)/Dwarf Fortress/data/*
+!/Modified Masterwork V1.29 (43.05)/Dwarf Fortress/data/save
+
+/Tools
+
+/v.0.34.11/*
+!/v.0.34.11/data
+/v.0.34.11/data/*
+!/v.0.34.11/data/save
+
+/v.0.40.12/*
+!/v.0.40.12/data
+/v.0.40.12/data/*
+!/v.0.40.12/data/save
+
+/v.0.42.01/*
+!/v.0.42.01/data
+/v.0.42.01/data/*
+!/v.0.42.01/data/save
+
+/v.0.42.03/*
+!/v.0.42.03/data
+/v.0.42.03/data/*
+!/v.0.42.03/data/save
+
+/Viewers
+*.zip
+*.7z
+desktop.ini
+!README.md
