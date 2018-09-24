@@ -1,0 +1,318 @@
+Changelog:
+1.5
+
++ PMD content (Optional, found in PMD folder)
+ * Guilds: Cities of a Pokemon species. Can be played in adventure or fortress mode
+ (Replacing the gen raws is recommended for this!)
+ Positions:
+	* Guildmaster: The leader of the guild. Handles training exercises and meetings (both with citizens and diplomats/liaisons)
+	* Second-in-command: Assistant to the Guildmaster (also succeeds them should something happen). Handles stock records, training exercises, health, production, meetings (with citizens), trade, and law.
+	* Team leader: Assigned through the Second-in-command. Leads a team of up to 5 Pokemon.
+	* Mail courier: The guild messenger. Gives news reports and makes agreements with other guilds.
+ * Items: Items that can be found or created by Pokemon Guilds (those that apply effects use animal caretaking)
+	* Food: Found in various biomes, some have effects when eaten
+		* Apple: Found anywhere. Has a chance to increase endurance by 300. Used in +1HP drinks
+		* Big Apple: Found in uncommonly anywhere. Has a chance to increase endurance by 400. Used in +2HP drinks
+		* Huge Apple: Found rarely anywhere. Increases endurance by 1000. Used in +4HP drinks
+		* Golden Apple: Found very rarely in savage biomes. Increases endurance by 5000
+		* Perfect Apple: Found very rarely in savage biomes. Increases endurance by 5000
+		* Banana: Found rarely in sedimentary layers. Has a chance to increase endurance by 500
+		* Golden Banana: Found rarely in savage biomes. Increases all stats by 500
+		* Chestnut: Found in temperate broadleaf forests. Has a chance to increase endurance by 500
+		* Mini Donut: Found uncommonly in good savage biomes. Increases all stats by 50
+		* Donut: Found rarely in good savage biomes. Increases all stats by 150
+		* Mega Donut: Found very rarely in good savage biomes. Increases all stats by 500
+		* Grimy Food: Found uncommonly in sandy deserts or caves. Has a chance to inflict Leg Hold, Poison, Paralysis, or Burn (20% for each, those with Gluttony are immune). Used in stat lowering or +2HP drinks
+		* Four-Leaf Cookie: Made from 2 bags of flour at a kitchen (using cooking). Chance to raise any stat by 100 (20% for each)
+		* Sweet Chocolate: Made from 5 cacao pods and a bag of dwarven sugar. Chance to raise any stat by 100 (20% for each)
+	* Blended drinks: Certain food items can be blended into drinks at a kitchen (using cooking) which can raise stats or IQ (soul attributes)
+		* Normal Blended drink: Made from items without a specific benefit. Can raise any stat (5% chance for each)
+		* IQ increase drink: Increases IQ by 100
+		* +1 Max HP drink: Increases endurance by 100. Can be made with Oran Berries
+		* +2 Max HP drink: Increases endurance by 200. Can be made with Cheri, Chesto, Pecha, or Rawst Berries and Gabite Scales
+		* +4 Max HP drink: Increases endurance by 400
+		* IQ and +1 Max HP drink: Increases IQ and endurance by 100
+		* Stat lowering drink: Lowers a stat by 100 (20% chance for each)
+		* Gummi Blended drink: Made from Gummis. Can raise any stat (20% chance for each) by 100
+		* Wonder Gummi Blended drink: Made from Wonder Gummis. Can raise any stat (25% chance for each) by 300
+		* Miracle drink: Possibly made when other drinks are made (5% chance for all but stat lowering). Can raise any stat (50% chance for each) by 500
+	* Gummis: Found in various biomes and come in a variety of colors. Increases IQ and stats depending on its type and the type of the Pokemon eating it
+	10%/20% Chance stat increase by 100/200 for non preferred/preferred
+	IQ increases by 300/500 for non preferred/preferred
+		* Black: Found underground. Preferred by Dark types
+		* Blue : Found along oceans. Preferred by Water types
+		* Brown: Found in sandy deserts. Preferred by Ground types
+		* Clear: Found in taigas. Preferred by Ice types
+		* Gold: Found in mangrove swamps. Preferred by Psychic types
+		* Grass: Found in temperate broadleaf forests. Preferred by Grass types
+		* Gray: Found in rocky wastelands. Preferred by Rock types
+		* Green: Found in moist tropical broadleaf forests. Preferred by Bug types
+		* Orange: Found along mountains. Preferred by Fighting types
+		* Pink: Found in marshes. Preferred by Poison types
+		* Purple: Found in evil biomes. Preferred by Ghost types
+		* Red: Found in badlands. Preferred by Fire types
+		* Royal: Found in good biomes. Preferred by Dragon types
+		* Silver: Found underground. Preferred by Steel types
+		* Sky: Found in grasslands. Preferred by Flying types
+		* White: Found rarely anywhere. Preferred by Normal types
+		* Yellow: Found in savannas. Preferred by Electric types
+		* Wonder: Found rarely in savage biomes. Increases IQ by 1500 for all types
+	* Seeds: Found uncommonly anywhere. Have various effects when eaten/blended and can be turned into ammo for item throwers
+		* Ban: Inflicts Disabled (only able to use push attacks)
+		* Blast: Briefly allows the user to shoot fire, explodes when thrown at a target. Used for +2HP drinks
+		* Blinker: Inflicts Blinker (sight parts impaired). Used for +4HP drinks
+		* Doom: Reduces all stats by 100
+		* Decoy: Inflicts Infatuated (confusion)
+		* Encourage: Inflicts Encouraged (skill rolls increased by 100% with a chance of an extra 100%)
+		* Energy: Temporarily increases endurance by 100 with a chance of permanently increasing
+		* Eyedrop: Temporarily allows the user to sense creatures. Used for IQ drinks
+		* Golden: Found rarely in savage biomes. Increases all stats by 300
+		* Heal: Currently does nothing. Used for +1HP drinks
+		* Hunger: Inflicts Hungry Pal (speed reduced to 0). Used for stat reducing drinks
+		* Joy: Raises all stats by 100
+		* Life: Increases endurance by 300
+		* Plain: Has no effect. Used for +1HP drinks
+		* Quick: Temporarily increases the user's speed by 10%. Used for +2HP drinks
+		* Reviver: Allows the user to resurrect a Pokemon. Used for +1HP drinks
+		* Sleep: Inflicts Sleep. Used for +4HP drinks
+		* Soothing: Currently does nothing
+		* Stun: Inflicts Petrified (speed reduced to 0 and paralysis). Used for +2HP drinks
+		* Tiny Reviver: Same as Reviver but the Pokemon starts with half its endurance and recuperation
+		* Totter: Inflicts Confusion. Used for +4HP drinks
+		* Vanish: Inflicts Invisible (allows the user to do the hide interaction). Used for +2HP drinks
+		* Vile: Reduces toughness to 0. Used for +2HP drinks
+		* Violent: Temporarily increases strength by 5000. Used for +2HP drinks
+		* X-Eye: Inflicts Cross-eyed (sight parts impaired but all creatures are sensed as a dark green 's'). Used for +4HP drinks
+	* Health drinks: Made at a kitchen (using cooking). Increases IQ or certain stats
+		* Protein: Made with 3 Liechi Berries. Increases strength by 300
+		* Iron: Made with 3 Ganlon Berries. Increases toughness by 300
+		* Calcium: Made with 3 Petaya Berries. Increases strength by 300
+		* Zinc: Made with 3 Apicot Berries. Increases toughness by 300
+		* Carbos: Made with 3 Salac Berries. Increases agility by 300
+		* Ginseng: Made from 2 Liechi and Petaya Berries. Briefly increases strength by 100 with a chance for an extra 200
+		* Elixir: Made from 3 Leppa Berries. Briefly increases endurance by 100
+		* Max Elixir: Made from 5 Leppa Berries. Briefly increases endurance by 5000. Used in IQ increasing drinks
+		* PP All: Made from a 7 Leppa Berries. Briefly increases endurance by 5000 and can also be done to up to 5 other targets
+		* Nectar: Made from extracted flower nectar (coloured flowers). Increases IQ by 1000.  Used in IQ increasing drinks
+		* Power Drink: Made from 3 Lansat Berries. Briefly increases strength by 500
+		* Accuracy Drink: Made from 3 Micle Berries. Increases skill rolls by 10%
+		* PP-Up Drink: Made from a Max Elixir and 5 Leppa Berries. Increases endurance by 500
+	* Glasses: Made with 2 cut clear glass and a certain seed at a craft workshop (using glass making). Has certain effects when applied (not worn)at a Pokemon Center, and can be worn on the head (has 25% coverage)
+		* Goggle Specs: Requires an Eyedrop seed. Allows the user to sense creatures
+		* Insomniscope: Requires a Sleep seed. Gives NO_SLEEP and prevents sleep
+		* Lockon Specs: Requires a Totter seed. Increases skill rolls by 10%
+		* Scope Lens: Requires an Encourage seed. Increases skill rolls by 100% on 10% of rolls
+		* Whiff Specs: Requires a Quick seed. Increases agility by 1000
+		* X-Ray Specs: Requires an X-Eye seed. Allows the user to sense creatures
+	* Caps/Scarves/Bands/Belts/Ribbons/Capes/Bows: Made with cloth and other items (at a clothier's shop using clothes making). Have various effects when applied (not worn) at a Pokemon Center, and also have generic versions that civs wear
+		(generic)
+		* Cap: Worn on the head and has 50% coverage
+		* Scarf: Worn on the head and has 20% coverage
+		* Band: Worn on the head and has 10% coverage
+		* Belt: Worn on the lower body and has 10% coverage
+		* Ribbon: Worn on the head and has 20% coverage
+		* Capes: Worn on the body and has 50% coverage
+		* Bows: Worn on the head and has 5% coverage
+		(special)
+		* Pecha Scarf: Made with a Pecha Berry. Prevents Poisoned/Badly Poisoned (gives NONAUSEA and NO_DIZZINESS)
+		* Persim Band: Made with a Persim Berry. Prevents confusion
+		* Weather Band: Made with a Heat, Icy, and Smooth Rock. Prevents effects of weather
+		* Defense Scarf: Made with a Kee Berry. Increases toughness by 500
+		* Detect Band: Made with a Quick seed. Increases speed by 20%
+		* Munch Belt: Made with a Hunger seed. Increases strength by 1600 but halves endurance
+		* Power Band: Made with a Liechi Berry. Increases strength by 500
+		* Special Band: Made with a Petaya Berry. Increases strength by 500
+		* Twist Band: Made with a Starf Berry. Prevents stat reducing
+		* Zinc Band: Made with a Apicot Berry. Increases toughness by 500
+		* Gold Ribbon: Made with a gold bar. Can be sold for a higher price
+		* Heal Ribbon: Made with a Heal seed. Increases recuperation by 25% but reduces endurance by 25%
+		* Joy Ribbon: Made with a Joy seed. Increases all stats by 250
+		* Lucky Ribbon: Made with a Lansat Berry. Increases skill rolls by 100% on 20% of rolls
+		* Stamina Band: Made with a Energy seed. Increases endurance by 500
+		* Tight Belt: Made with a Life seed. Increases endurance by 5000
+	* Flags: Made with cloth, a wood log, and a certain item at a craft workshop (using wood crafting). Allows the user to aid those around them with various effects (but not themself)
+		* Cheering: Made with a Liechi Berry. Increases strength by 500
+		* Clarity: Made with a Persim Berry. Prevents confusion
+		* Immunity: Made with a Pecha Berry. Prevents Poisoned/Badly Poisoned
+		* Insomnia: Made with a Chesto Berry. Gives NO_SLEEP and prevents sleep
+		* Limber: Made with a Cheri Berry. Gives PARALYZEIMMUNE and prevents paralysis
+		* Resilient: Made with a Starf Berry. Prevents stat reducing
+		* Tough: Made with a Jaboca and Rowap Berry. Increases toughness by 1000
+	* Looplets: Made with an iron bar and another item at a craft workshop (using metal crafting). Have various effects when applied, but can add an additional effect when used with an Emera
+		* Looplet: Needs no other items. Has no effect
+		* Pecha Looplet: Made with a Pecha Berry. Prevents Poisoned/Badly Poisoned
+		* Persim Looplet: Made with a Persim Berry. Prevents confusion
+		* Resilient Looplet: Made with a Starf Berry. Prevents stat reducing
+		* Wakeful Looplet: Made with a Chesto Berry. Gives NO_SLEEP and prevents sleep
+		* Weather Looplet: Made with a Heat, Icy, and Smooth Rock. Prevents effects of weather
+		* Attack Looplet: Made with a Liechi Berry. Increases strength by 1000
+		* Defense Looplet: Made with a Ganlon Berry. Increases toughness by 1500
+		* Detect Looplet: Made with a Quick Seed. Increases speed by 20%
+		* Focus Looplet: Made with a Lansat Berry. Increases skill rolls by 100% on 20% of rolls
+		* Sp. Attack Looplet: Made with a Petaya Berry. Increases strength by 1000
+		* Sp. Defense Looplet: Made with a Apicot Berry. Increases toughness by 1500
+		* Speed Looplet: Made with a Salac Berry. Increases agility by 2000
+		* Gold Looplet: Made with a gold bar instead of iron. Has no effect
+		* Healing Looplet: Made with a Heal Seed. Increases recuperation by 10%
+		* Joy Looplet: Made with a Joy Seed. Increases all stats by 100 every month (up to 1000)
+		(Never Hungries' Looplets, not used up)
+		* Well-Fed Looplet: Made with 1 of every normal apple item. Increases endurance by 50%
+		* Big Belly Looplet: Made with 1 golden apple and banana. Increases endurance by 100%
+		* Satiated Looplet: Made with 1 of every apple and banana item. Increases endurance by 5000
+		(treasure Looplets, made with an adamantine wafer and isn't used up)
+		* Wildfire/Tempest Looplet: Increases strength by 3000
+		* Radiance/Time/Red Looplet: Increases toughness by 4000
+		* Darkness Looplet: Increases strength by 4000
+		* Sky Looplet: Increases agility by 5000
+		* Blue Looplet: Increases endurance by 5000
+		* Air Looplet: Prevents the berserk effect of the Awakening Emera
+		* Mist Looplet: Increases endurance by 50%
+		* Sand Looplet: Increases strength by 50%
+		* Sea Looplet: Allows the user to sense creatures
+		* Wind Looplet: Prevents status conditions and stats being lowered
+	* Emeras: Found rarely in stone layers. Can be used alone to temporarily boost a stat by 500, or with a Looplet for a specific effect after being cut (effects last 3 months)
+		* Ally Reviver: Boosts endurance, or allows the user to revive others but cannot be revived themself
+		* Awakening: Boosts endurance, or Mega Evolves a Pokemon, but they will go berserk some time after doing so (eventually reverting back). Those that cannot Mega Evolve have all their stats increased by 1000
+		* Berry Power: Boosts toughness, or prevents status conditions and stats being lowered
+		* Better Odds: Boosts strength, or increases skill rolls by 100% on 50% of rolls
+		* Big Ears: Boosts strength, or allows the user to sense creatures
+		* Burn Guard: Boosts endurance, or prevents burn
+		* Clutch Performer: Boosts agility, or increases skill rolls by 900% on 5% of rolls
+		* Confusion Guard: Boosts endurance, or prevents confusion
+		* Dizzying Payback: Boosts toughness, or allows the user a chance to confuse a target
+		* Dizzying Stare: Boosts strength, or allows the user a chance to confuse a target
+		* Go for Broke: Boosts endurance, or boosts all stats by 2500 but prevents reviving
+		* Guard Boost: Boosts toughness, or gives a force multiplier of 3/4 (making them 1.25x stronger)
+		* Huge Meal: Boosts endurance, or increases endurance by 100%
+		* Intimidator: Boosts agility, or allows the user a chance to briefly stun a target
+		* Lullaby: Boosts endurance, or gives the user a chance to put a target to sleep
+		* Mobility: Boosts endurance, or increases speed by 50% but reduces endurance by the same amount
+		* Natural Recovery: Boosts endurance, or increases recuperation by 20%
+		* Paralysis Guard: Boosts endurance, or gives PARALYZEIMMUNE and prevents paralysis
+		* Payback: Boosts toughness, or gives the user a chance to reduce a target's endurance and toughness to 0
+		* Petrify Power: Boosts toughness, or gives the user a chance to petrify a target (speed reduced to 0 and paralysis)
+		* Poison Guard: Boosts endurance, or prevents Poisoned/Badly Poisoned
+		* Power Boost X/Y: Boosts strength, or increases strength by 1000. Can be used with the other to also increase skill rolls by 25% on 100% of rolls
+		* PP Restore: Boost endurance, or increases endurance by 1000.
+		* Rain's Blessing: Boosts endurance, or allows the user to cause rain
+		* Resilient: Boosts toughness, or prevents stat reducing
+		* Sleep Guard: Boosts endurance, or gives NO_SLEEP and prevents sleep
+		* Sleep Payback: Boosts toughness, or gives the user a chance to put a target to sleep
+		* Status Immunity: Boosts toughness, or prevents status conditions
+		* Super Critical: Boosts strength, or increases skill rolls by 300% on 10% of rolls
+		* Sun's Blessing: Boosts endurance, or allows the user to cause sun
+		* Toughness: Boosts toughness, or increases toughness by 2500
+	* Wonder Orbs: Made from 2 cut clear glass and a certain item at a craft workshop (using glass making). Allows a user to aid itself and/or others nearby with various effects
+		* All Dodge: Made with an extra cut clear glass and a Mobility Emera. Increases speed by 50%
+		* All-Hit: Made with an extra cut clear glass and an Encourage Seed. Increases skill rolls by 100% on 50% of rolls
+		* All-Mach: Made with an extra cut clear glass and a Salac Berry. Increases speed by 20%
+		* All Power-Up: Made with an extra cut clear glass and a Violent Seed. Increases strength by 2000
+		* All Protect: Made with an extra cut clear glass and a Guard Boost Emera. Gives a force multiplier of 1/100 (making them near invincible)
+		* Apathy: Made with a Soothing Seed. Impairs grasp parts of enemies
+		* Devolve: Made with a Doom Seed. Temporarily devolves enemy Pokemon to a previous stage
+		* Evasion: Made with a Quick Seed. Increases the user's speed by 40%
+		* Enemy Evolve: Made with a Joy Seed. Temporarily evolves enemy Pokemon to its next stage
+		* Foe-Fear: Made with an Intimidator Emera. Makes enemies likely to run away
+		* Foe-Hold: Made with a Stun Seed. Inflicts Petrified (speed reduced to 0 and paralysis) on enemies
+		* Foe-Seal: Made with a Hunger Seed. Inflicts Lethargic (speed reduced to 0 and paralysis) on enemies
+		* Hail: Made with an Icy Rock. Causes hail
+		* Health: Made with a Heal Seed. Prevents status conditions 
+		* Invisify: Made with a Vanish Seed. Gives the user a hide interaction
+		* One-Shot: Made with a Vile Seed. Has a chance to instantly defeat (kill) a target
+		* Radar: Made with an Eyedrop Seed. Allows the user to sense creatures
+		* Rainy: Made with a Damp Rock. Causes rain
+		* Rebound: Made with a Toughness Emera. Gives the user a force multiplier of 3/4 (making them 1.25x stronger)
+		* Revive All: Made with a Reviver Seed. Revives nearby Pokemon
+		* Rocky: Made with any stone (non-economic). Inflicts pain and reduces a target's speed by 20%
+		* Sandy: Made with a Smooth Rock. Causes a sandstorm
+		* Silence: Made with a Ban Seed. Inflicts Muzzled (impairs mouth parts) on a target
+		* Slow: Made with a X-Eye Seed. Reduces enemies speed by 20%
+		* Slumber: Made with a Sleep Seed. Puts enemies to sleep
+		* Sunny: Made with a Heat Rock. Causes sun
+		* Totter: Made with a Totter Seed. Confuses enemies
+		* Two-Edge: Made with a Blast Seed. Reduces toughness of enemies to 0 and gives a force multiplier of 100/1 (making them very weak), but the users toughness is reduced by 50%
+	* Throwable items: Items used with the item thrower weapon, some are made throwable at a craft workshop using weaponsmithing
+		* Geo Pebble: Made with 1 stone (non-economic, makes 5)
+		* Gravelerock: Made with 1 stone (economic, makes 5)
+		* Spikes: Made from wood/bone/metal (generic ammo for item throwers)
+		* Cacnea Spike: Found on wild Cacnea
+		* Corsola Twig: Found on wild Corsola
+		* Rare Fossil: Found rarely anywhere
+		* Unown Stones: Found on Unown
+		* Golden Fossil: Found very rarely anywhere
+	* Devices: Made with a certain type gem, iron bar, and a mechanism at a craft workshop (using metal crafting). Increases strength and toughness by 400 for a certain type of Pokemon
+		* Bug: Made with a Bug Gem
+		* Dark: Made with a Dark Gem
+		* Dragon: Made with a Dragon Gem
+		* Electric: Made with a Electric Gem
+		* Fairy: Made with a Fairy Gem
+		* Fighting: Made with a Fighting Gem
+		* Fire: Made with a Fire Gem
+		* Flying: Made with a Flying Gem
+		* Ghost: Made with a Ghost Gem
+		* Grass: Made with a Grass Gem
+		* Ground: Made with a Ground Gem
+		* Ice: Made with a Ice Gem
+		* Normal: Made with a Normal Gem
+		* Poison: Made with a Poison Gem
+		* Psychic: Made with a Psychic Gem
+		* Rock: Made with a Rock Gem
+		* Steel: Made with a Steel Gem
+		* Water: Made with a Water Gem
+	* Wands: Made with 2 logs and a certain item at a craft workshop (using wood crafting). Allows the user to do certain effects
+		* Blast: Made with a Blast Seed. Allows the user to do a fire interaction
+		* Confuse: Made with a Totter Seed. Allows the user to confuse a target
+		* Petrify: Made with a Stun Seed. Allows the user to petrify a target (speed reduced to 0 and paralysis)
+		* Quarter: Made with a Vile Seed. Allows the user to reduce a target's toughness by 25%
+		* Slow: Made with a Hunger Seed. Allows the user to reduce a target's speed by 25%
+		* Slumber: Made with a Sleep Seed. Allows the user to put a target to sleep
+		* Two-Edged: Made with a Doom Seed. Allows the user to reduce a target's toughness to 0 but reduces its own by 50%
+	* Evolution items: Used to evolve certain Pokemon at an Evolution Chamber (not spent when used, note that those requiring a secondary item evolve using that item in chamber, and those who don't need it can do a free reaction to do so) 
+		* Beauty Scarf: Made with 3 pieces of cloth at a craft workshop (using clothes making). Evolves Feebas into Milotic, and can be worn like a scarf
+		* Coronet Rock: Found rarely anywhere. Evolves Magneton/Nosepass/Charjabug/Crabrawler into Magnezone/Probopass/Vikavolt/Crabominable
+		* Frozen Rock: Found rarely anywhere. Evolves Eevee into Glaceon
+		* Link Cable: Made with 3 copper bars at a craft workshop (using metal crafting). Evolves Pokemon that evolve through trading (Kadabra, Machoke, Graveler, Haunter, Seadra (with a Dragon Scale), Clamperl (with a Deep Sea Scale/Tooth), Boldore, Gurrdurr, Karrablast, Shelmet, Phantump, Pumpkaboo)
+		* Lunar Ribbon: Made with 2 pieces of cloth and a Moon stone at a craft workshop (using clothes making). Evolves Eevee/Chingling into Umbreon/Chimecho, and can be worn like a ribbon
+		* Mossy Rock: Found rarely in soil. Evolves Eevee into Leafeon
+		* Sun Ribbon: Made with 2 pieces of cloth and a Sun Stone at a craft workshop (using clothes making). Evolves Eevee/Budew/Happiny (with an Oval Stone)/Riolu into Espeon/Roselia/Chansey/Lucario, and can be worn like a ribbon
+		* Dubious Disc: Made with 1 aluminum bar and 3 mechanisms at a craft workshop (using metal crafting). Evolves Porygon2 into Porygon-Z (with a Link Cable)
+		* Electirizer: Made with 2 iron bars and an Electric Gem at a craft workshop (using metal crafting). Evolves Electabuzz into Electivire (with a Link Cable)
+		* King's Rock: Found somewhat rarely in any stone which then can be crafted into a crown at a craft workshop (using stone crafting). Evolves Poliwhirl/Slowpoke into Politoed/Slowking (with a Link Cable)
+		* Magmarizer: Made with 2 iron bars and a Fire Gem at a craft workshop (using metal crafting). Evolves Magmar into Magmortar (with a Link Cable)
+		* Metal Coat: Made with 1 aluminum and steel bar at a craft workshop (using metal crafting). Evolves Onix/Scyther into Steelix/Scizor (with a Link Cable)
+		* Protector: Made with 5 (non economic) stones at a craft workshop (using stone crafting). Evolves Rhydon into Rhyperior (with a Link Cable)
+		* Razor Claw: Made from 3 iron bars at a craft workshop (using metal crafting). Evolves Sneasel into Weavile (with a Lunar Ribbon)
+		* Razor Fang: Made from 3 iron bars at a craft workshop (using metal crafting). Evolves Gligar into Gliscor (with a Lunar Ribbon)
+		* Reaper Cloth: Made with 1 cloth and 1 glumprong log at a craft workshop (using weaving). Evolves Dusclops into Dusknoir (with a Link Cable)
+		* Up-Grade: Made with 1 aluminum bar and 1 mechanism at a craft workshop (using metal crafting). Evolves Porygon into Porygon 2 (with a Link Cable)
+		* Sachet: Made with a bag and 3 of any flower items (colored flowers or those from Flabebe, Floette, Roselia, Lilligant) at a farmers workshop (using plant processing). Evolves Spritzee into Aromatisse (with a Link Cable)
+		* Whipped Dream: Made with 2 oats at a kitchen (using cooking). Evolves Swirlix into Slurpuff (with a Link Cable)
+	* Lookalike items: Found in the same places as their real items or sometimes produced with them. Have different effects from their real counterparts and edible items can be used in IQ and +1HP drinks
+		* Oren Berry: Lookalike for Oran Berry. Briefly reduces toughness by 100
+		* Reviser Seed: Lookalike for Reviver Seed. Revives a Pokemon who will faint shortly afterwards
+		* Via Seed: Lookalike for Vile Seed. Briefly gives the user a hide interaction
+		* Dropeye Seed: Lookalike for Eyedrop Seed. Briefly impairs sight parts
+		* Mix Elixir: Lookalike for Max Elixir. Briefly increases endurance by 5000 if used by a Linoone
+		* Gone Pebble: Lookalike for Geo Pebble. Briefly gives a force multiplier of 1/100 (making them near invincible)
+		* Gravelyrock: Lookalike for Gravelerock. Has a chance to increase endurance by 400 and increases IQ by 1000 if eaten by Sudowoodo or Bonsly
+		* Wander Gummi: Lookalike for Wonder Gummi. Inflicts Blinker (sight parts impared)
+		* Gaggle Specs: Lookalike for Goggle Specs. Reduces skill rolls by 25% on 100% of rolls
+		* Y-Ray Specs: Lookalike for X-Ray Specs. Inflicts Blinker (sight parts impared)
+	* Special items: Made with adamantine wafers and other items at a metalsmith's forge (using metal crafting)
+		* Golden Mask: Made with 1 adamantine wafer and gold bar. Causes emotions when used (not spent when used)
+		* Aqua-Monica: Made with 2 adamantine wafers and a cut Water Gem. Used as an instrument
+		* Fiery Drum: Made with 2 adamantine wafers and a cut Fire Gem. Used as an instrument
+		* Grass Cornet: Made with 2 adamantine wafers and a cut Grass Gem. Used as an instrument
+		* Icy Flute: Made with 2 adamantine wafers and a cut Ice Gem. Used as an instrument
+		* Rock Horn: Made with 2 adamantine wafers and a cut Rock Gem. Used as an instrument
+		* Sky Melodica: Made with 2 adamantine wafers and a cut Flying Gem. Used as an instrument
+		* Terra Cymbal: Made with 2 adamantine wafers and a cut Ground Gem. Used as an instrument
+		* Space Globe: Made with 3 adamantine wafers and 2 cut clear glass. Increases strength by 100% (not spent when used)
+		* Heart Pendant: Made with 2 adamantine wafer and 1 piece of string. Increases endurance by 5000
+		* Persistence Crown: Made with 3 adamantine wafers. Increases toughness by 3000
+
+- Fixed phase 1 Poke Beanstalk needing a phase 2 seed
+- Gave certain tentacles GRASP
+- Added NOT_ENGRAVED to slab reactions
+- Added MOUNT to some Pokemon
+- Made those who self-destruct less likely to explode (hopefully)

@@ -1,0 +1,4 @@
+[2018-09-25T01:19:59+0200] DFHack 0.44.12-r1-0-gc2a64b35 on Windows; cwd md5: ec3325221f; save: region1; SC_WORLD_LOADED; game type ADVENTURE_MAIN (1)
+[2018-09-25T01:21:19+0200] DFHack 0.44.12-r1-0-gc2a64b35 on Windows; cwd md5: ec3325221f; save: region1; SC_MAP_LOADED; game type ADVENTURE_MAIN (1)
+[2018-09-25T01:33:44+0200] DFHack 0.44.12-r1-0-gc2a64b35 on Windows; cwd md5: ec3325221f; save: region1; SC_MAP_UNLOADED; game type ADVENTURE_ARENA (5)
+[2018-09-25T01:33:44+0200] DFHack 0.44.12-r1-0-gc2a64b35 on Windows; cwd md5: ec3325221f; save: region1; SC_WORLD_UNLOADED; game type ADVENTURE_ARENA (5)

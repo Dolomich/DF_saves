@@ -53,3 +53,10 @@
 *.7z
 desktop.ini
 !README.md
+
+/Dwarvemon/*
+!/Dwarvemon/data
+/Dwarvemon/data/*
+!/Dwarvemon/data/save
+
+/Dwarvemon 1.5
